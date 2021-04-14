@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #cce0e6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#form {
+  background: #FFF;
+  max-width: 500px;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 40px #292929;
+  position: relative;
+}
+
+#form input,
+#form select {
+  margin: 1rem 0;
+  padding: 0.75rem 0.25rem;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+}
+
+#form h4 {
+  color: #555;
+  font-size: .90rem;
+}
+
+.mt {
+  margin-top: 8rem;
+}
+
+#form .input-container {
+  position: relative;
+  font-size: 1rem;
+  color: #333;
+}
+
+#form .input-grp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+
+#form button {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  margin-top: 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  background-color: #060a24;
+  color: #FFF;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 9;
+}
+
+#form button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #b03722fa;
+  z-index: -1;
+}
+
+#form button:hover:before {
+  width: 100%;
+  transition: .2s all;
+}
+
+#card {
+  height: 200px;
+  width: 100%;
+  max-width: 385px;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/7653/pexels-photo.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+  color: #eee;
+  filter: drop-shadow(1px 3px 10px #444);
+
+  animation: fadeIn .2s linear 1;
+}
+
+@keyframes fadeIn {
+  from {
+    top: -150px;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#card .header {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+#card .sticker {
+  width: 50px;
+  height: 40px;
+  background-image: url("https://images.pexels.com/photos/728471/pexels-photo-728471.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center;
+  background-size: cover;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+#card .logo {
+  max-width: 60px;
+}
+
+#card .body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+
+#card .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+
+/*# sourceMappingURL=/styles.164d45a1.css.map */
