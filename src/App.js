@@ -20,7 +20,7 @@ function App() {
   const [expireMonth, setExpireMonth] = useState('MM');
   const [expireYear, setExpireYear] = useState('YYYY');
   const [cardTypeUrl, setCardTypeUrl] = useState('https://logos-world.net/wp-content/uploads/2020/04/Visa-Logo.png');
-  const [flip, setFlip] = useState(null);
+  // const [flip, setFlip] = useState(null);
   
   const handleNum = (e) => {
     setCreditCardNum(e.target.rawValue);
@@ -31,7 +31,7 @@ function App() {
     setCardType(type);
     console.log(type);
 
-    if(type == "visa") {
+    if(type === "visa") {
       setCardTypeUrl(imageUrls[0]);
       console.log("Visa")
     } else if(type === "mastercard") {
@@ -143,15 +143,11 @@ function App() {
                 </div>
                 <div className="input-container">
                     <h4>CVV</h4>
-                    <input type="text" placeholder="CVV" required/>
+                    <input type="password" placeholder="CVV" required/>
                 </div>
             </div>
 
-            <button>
-              {
-                `Submit ${cardType} payment`
-              }
-              </button>
+            <button>{`Submit ${cardType} payment`}</button>
         </form>
     </div>
   );

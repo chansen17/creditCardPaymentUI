@@ -13,7 +13,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background-color: #cce0e6;
+  background: #eee;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -22,15 +25,15 @@ body {
 }
 
 #form {
-  background: #FFF;
+  background: #fff;
   max-width: 500px;
   max-height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 3px 3px 40px #292929;
+  border-radius: 10px;
+  box-shadow: 3px 3px 40px #545454e8;
   position: relative;
 }
 
@@ -46,7 +49,7 @@ body {
 }
 
 #form h4 {
-  color: #555;
+  color:#555;
   font-size: .90rem;
 }
 
@@ -89,7 +92,7 @@ body {
   left: 0;
   height: 100%;
   width: 0;
-  background-color: #b03722fa;
+  background-color: #3b2dd2fa;
   z-index: -1;
 }
 
@@ -111,11 +114,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("https://images.pexels.com/photos/7653/pexels-photo.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
   background-position: center;
   color: #eee;
-  filter: drop-shadow(1px 3px 10px #444);
+  filter: drop-shadow(1px 3px 10px #222);
 
   animation: fadeIn .2s linear 1;
 }
